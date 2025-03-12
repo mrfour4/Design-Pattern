@@ -17,4 +17,14 @@ Bạn được yêu cầu thiết kế một hệ thống quản lý các chế 
     -   **Chế độ ăn chay**: Đậu hũ, khoai tây, rau củ hỗn hợp, nước lọc.
 -   **Triển khai Builder Pattern** để dễ dàng xây dựng các chế độ ăn khác nhau mà không cần thay đổi mã nguồn hiện có.
 
-## Lời giải
+## Class Diagram - Hệ Thống Quản Lý Chế Độ Ăn Uống
+
+![Class diagram](../images/builder.jpg)
+
+Sơ đồ trên mô tả hệ thống quản lý chế độ ăn uống sử dụng **Builder Pattern**.
+
+-   **MealBuilder (Interface)**: Định nghĩa các phương thức để thiết lập từng thành phần của bữa ăn.
+-   **Concrete Builders** (`MediterraneanMealBuilder`, `DASHMealBuilder`, `VegetarianMealBuilder`): Triển khai `MealBuilder` để xây dựng các bữa ăn theo chế độ tương ứng.
+-   **MealDirector**: Điều phối quá trình xây dựng bữa ăn bằng cách gọi các phương thức của `MealBuilder`.
+-   **Meal**: Đối tượng chứa thông tin về bữa ăn hoàn chỉnh (Protein, Carbohydrate, Rau củ, Đồ uống).
+-   **Client**: Gọi `MealDirector` và `MealBuilder` để tạo một bữa ăn theo chế độ mong muốn.
