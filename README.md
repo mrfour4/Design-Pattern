@@ -6,7 +6,11 @@ This repository contains implementations of various **Design Patterns** in softw
 
 ### Creational Patterns
 
--   [Builder Pattern](./builder/readme.md) - Separates the construction of a complex object from its representation.
+-   [Builder Pattern](./creation/builder/README.md) - Separates the construction of a complex object from its representation.
+
+-   [Prototype Pattern](./creation/prototype/README.md) - Creates new objects by copying an existing object instead of instantiating from scratch.
+
+-   [Singleton Pattern](./creation/singleton/README.md) - Ensures that a class has only one instance and provides global access to it.
 
 ### Structural Patterns
 
@@ -16,11 +20,31 @@ _(Coming soon...)_
 
 _(Coming soon...)_
 
-## How to Use This Repository
+## How to Run Example Code
 
-1. Navigate to the folder of the design pattern you're interested in.
-2. Read the `README.md` file inside to understand its concept and implementation.
-3. Explore the code to see how the pattern is applied.
+1. Clone the repository and install dependencies using your preferred package manager:
+
+    ```sh
+    npm install   # or yarn install, pnpm install, bun install
+    ```
+
+2. Run the example code for a specific pattern using:
+
+    ```sh
+    bun dev       # or npm run dev, pnpm dev
+    ```
+
+3. In the file `/index.ts`, you can call the corresponding function to test a pattern:
+
+    ```ts
+    import { prototypeExample } from "./creation/prototype/example";
+    import { singletonExample } from "./creation/singleton/example";
+
+    prototypeExample(); // Run Prototype pattern example
+    singletonExample(); // Run Singleton pattern example
+    ```
+
+4. Check the console output to see the results of each design pattern implementation.
 
 ## Contributing
 
