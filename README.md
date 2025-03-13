@@ -25,7 +25,7 @@ _(Coming soon...)_
 1. Clone the repository and install dependencies using your preferred package manager:
 
     ```sh
-    npm install   # or yarn install, pnpm install, bun install
+    bun install   # or yarn install, pnpm install, npm install
     ```
 
 2. Run the example code for a specific pattern using:
