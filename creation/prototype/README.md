@@ -12,3 +12,14 @@ Bạn được yêu cầu thiết kế một hệ thống quản lý các chươ
     -   **Tên chương trình**
     -   **Thời lượng**
     -   **Loại hình giải trí**
+
+## Class Diagram - Hệ Thống Quản Lý Chương Trình Giải Trí
+
+![Class diagram](../../images/prototype.png)
+
+Sơ đồ trên mô tả hệ thống quản lý chương trình giải trí sử dụng **Prototype Pattern**.
+
+-   **Entertainment (Abstract Class)**: Lớp cha định nghĩa các thuộc tính cơ bản và phương thức `clone()` để sao chép đối tượng.
+-   **Concrete Classes** (`Movie`, `TVShow`, `MusicEvent`): Kế thừa từ `Entertainment` và triển khai phương thức `clone()` để nhân bản đối tượng.
+-   **EntertainmentManager**: Quản lý danh sách chương trình giải trí, cho phép thêm mới, nhân bản và hiển thị danh sách.
+-   **Client**: Tạo các chương trình giải trí ban đầu, lưu trữ vào `EntertainmentManager`, và thực hiện nhân bản khi cần.

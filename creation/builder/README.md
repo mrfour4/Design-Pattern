@@ -19,7 +19,7 @@ Bạn được yêu cầu thiết kế một hệ thống quản lý các chế 
 
 ## Class Diagram - Hệ Thống Quản Lý Chế Độ Ăn Uống
 
-![Class diagram](../images/builder.jpg)
+![Class diagram](../../images/builder.png)
 
 Sơ đồ trên mô tả hệ thống quản lý chế độ ăn uống sử dụng **Builder Pattern**.
 
