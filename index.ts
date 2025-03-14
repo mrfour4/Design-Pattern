@@ -1,3 +1,3 @@
-import { singletonExample } from "./creation/singleton";
+import { FactoryCreation } from "./creation/factory";
 
-singletonExample();
+FactoryCreation.main();

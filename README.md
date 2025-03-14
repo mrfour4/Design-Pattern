@@ -37,11 +37,11 @@ _(Coming soon...)_
 3. In the file `/index.ts`, you can call the corresponding function to test a pattern:
 
     ```ts
-    import { prototypeExample } from "./creation/prototype/example";
-    import { singletonExample } from "./creation/singleton/example";
+    import { AbstractCreation } from "./creation/abstract";
+    import { BuilderCreation } from "./creation/builder";
 
-    prototypeExample(); // Run Prototype pattern example
-    singletonExample(); // Run Singleton pattern example
+    AbstractCreation.main();
+    BuilderCreation.main();
     ```
 
 4. Check the console output to see the results of each design pattern implementation.

@@ -12,7 +12,7 @@ export class Meal {
     }
 
     display(): void {
-        console.log(`Meal includes: 
+        console.log(`
         - Protein: ${this.protein}
         - Carbohydrate: ${this.carbohydrate}
         - Vegetables: ${this.vegetables}
