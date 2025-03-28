@@ -1,3 +1,3 @@
-import { FactoryCreation } from "./creation/factory";
+import { CompositeStructural } from "./structural/composite";
 
-FactoryCreation.main();
+CompositeStructural.main();
