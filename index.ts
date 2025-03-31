@@ -1,3 +1,3 @@
-import { CompositeStructural } from "./structural/composite";
+import { ChainOfResponsibilityBehavioral } from "./behavioral/chain-of-responsibility";
 
-CompositeStructural.main();
+ChainOfResponsibilityBehavioral.main();
