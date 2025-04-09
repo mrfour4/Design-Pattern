@@ -1,3 +1,3 @@
-import { ChainOfResponsibilityBehavioral } from "./behavioral/chain-of-responsibility";
+import { MediatorBehavioral } from "./behavioral/mediator";
 
-ChainOfResponsibilityBehavioral.main();
+MediatorBehavioral.main();
